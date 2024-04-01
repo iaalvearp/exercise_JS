@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --bg: #09f;
+  --contrast: #fff;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_container {
+  height: 100%;
+  width: 90%;
+  max-width: 48rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.btn_modal {
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal_bg {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  transform: scale(0);
+  transition: transform 500ms ease-in;
+}
+
+.modal {
+  height: 100%;
+  max-height: 20rem;
+  width: 100%;
+  max-width: 20rem;
+  padding: 0 5%;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid var(--bg);
+  background-color: var(--contrast);
+  z-index: 2;
+  transform: scale(0);
+  transition: transform 500ms ease-in;
+}
+
+.modal.one h2 {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--bg);
+  width: 100%;
+  border-radius: 1rem;
+  color: var(--contrast);
+}
+
+.modal.one p {
+  text-wrap: pretty;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.modal.one .pic_container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.one img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.modal.two {
+  transform: scale(0);
+  background-color: var(--bg);
+  color: var(--contrast);
+}
+
+.modal.two .pic_container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.two img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.modal.two h2 {
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  width: 100%;
+}
+
+.modal.three .pic_container {
+  clip-path: ellipse(100% 72% at 50% 27%);
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.modal.three img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.modal.three h2 {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.show_modal {
+  transform: scale(1);
+}

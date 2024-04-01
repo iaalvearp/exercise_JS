@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.discount-title {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+#price,
+#discount {
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+#output {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#btn-discount {
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 0.5rem;
+}
