@@ -5,31 +5,35 @@ export default class createCalculator {
         this.total = 0;
     }
 
-    add(valor) {
-        this.total += valor;
+    add(inputNum) {
+        this.total += inputNum;
         return this.total
     }
 
-    subtract(valor) {
-        this.total -= valor;
+    subtract(inputNum) {
+        this.total -= inputNum;
         return this.total
     }
 
-    mul(valor) {
-        this.total *= valor;
+    mul(inputNum) {
+        this.total *= inputNum;
         return this.total
     }
 
-    div(valor) {
-        if (valor !== 0) {
-            this.total /= valor;
+    div(inputNum) {
+        if (inputNum !== 0) {
+            this.total /= inputNum;
             return this.total
         } else {
             return "No se puede dividir por cero.";
         }
     }
 
+    getTotal() {
+        return this.total
+    }
+
     clear() {
-        return this.valor = 0
+        return this.total = 0
     }
 }

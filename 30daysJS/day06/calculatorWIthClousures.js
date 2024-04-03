@@ -34,4 +34,5 @@ const calculator = new createCalculator()
 
 console.log(calculator.add(10))
 console.log(calculator.subtract(-10))
+console.log(calculator.getTotal())
 console.log(calculator.clear())
