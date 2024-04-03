@@ -1,6 +1,6 @@
 'use strict'
 import createCalculator from './operations.js'
-/*Clase  23 – Calculadora con closures
+/*Clase  25 – Calculadora con closures
 En este desafío tendrás que crear una calculadora mediante el uso de closures.
 La calculadora debe contar con los siguientes métodos:
     • add: recibe un número, lo suma al total y devuelve el resultado
